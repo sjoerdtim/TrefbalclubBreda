@@ -62,7 +62,7 @@
 
     .poster-wrapper {
       position: relative;
-      padding: 0px 0 50px;
+      padding: 0px 0 30px;
       min-height: 100vh;
       overflow: hidden;
     }
@@ -203,6 +203,12 @@
       box-shadow: 0 16px 40px rgba(38, 56, 191, 0.12);
       height: 100%;
     }
+	
+	@media (max-width: 991.98px) {
+  .figure-watermark {
+    display: none !important;
+  }
+}
 
     .info-card h3 {
       color: var(--red);
@@ -304,7 +310,7 @@
     .footer-note {
       text-align: center;
       color: rgba(255,255,255,0.85);
-      padding: 0 0 30px;
+      padding: 4rem 0 0px;
     }
 
     @media (max-width: 991.98px) {
@@ -436,14 +442,15 @@
         </div>
       </section>
     </div>
+	
+	<div class="footer-note">
+	  © <span id="year"></span> Trefbalclub Breda - 
+	  <a href="https://www.instagram.com/trefbalclubbreda/" target="_blank" rel="noopener" style="color: rgba(255,255,255,0.85) !important; text-decoration: none !important">
+		Volg ons op Instagram
+	  </a>
+	</div>
+	
   </main>
-
-<div class="footer-note">
-  © <span id="year"></span> Trefbalclub Breda - 
-  <a href="https://www.instagram.com/trefbalclubbreda/" target="_blank" rel="noopener" style="color: rgba(255,255,255,0.85) !important; text-decoration: none !important">
-    Volg ons op Instagram
-  </a>
-</div>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script>
